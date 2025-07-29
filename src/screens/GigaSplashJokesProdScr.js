@@ -19,7 +19,7 @@ const GigaSplashJokesProdScr = ({navigation, route}) => {
     route.params?.timeStampUserId,
   );
 
-  const INITIAL_URL = `https://granite-lunar-capsule.space`;
+  const INITIAL_URL = `https://tundra-spark-echo.site/`;
   const URL_IDENTIFAIRE = `kgxXvAZO`;
 
   const refWebview = useRef(null);
@@ -142,10 +142,10 @@ const GigaSplashJokesProdScr = ({navigation, route}) => {
     ) {
       setRedirectUrl(product);
     } else if (url.includes('about:blank') && checkNineUrl === product) {
-      refWebview.current.injectJavaScript(
-        `window.location.href = '${redirectUrl}'`,
-      );
-      console.log('xxxx');
+      //refWebview.current.injectJavaScript(
+      //  `window.location.href = '${redirectUrl}'`,
+      //);
+      //console.log('xxxx');
     } else if (
       url.includes('https://app.corzapay.com/payment/') &&
       checkNineUrl === product
@@ -233,6 +233,7 @@ const GigaSplashJokesProdScr = ({navigation, route}) => {
       refWebview.current.injectJavaScript(
         `window.location.href = '${redirectUrl}'`,
       );
+      console.log('window.location.href');
       return false;
     } else if (url.includes('applepay://') || url.includes('googlepay://')) {
       // Відкриваємо URL, якщо він веде на Apple Pay або Google Pay
@@ -468,6 +469,7 @@ const GigaSplashJokesProdScr = ({navigation, route}) => {
           'intent://*',
           'tel:*',
           'mailto:*',
+          'about:blank',
         ]}
         onShouldStartLoadWithRequest={onShouldStartLoadWithRequest}
         onNavigationStateChange={handleNavigationStateChange}

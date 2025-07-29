@@ -1,5 +1,4 @@
 // 📁 App.tsx
-
 import React,{ useEffect, useState, useRef } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -63,7 +62,7 @@ const App = () => {
   const [checkApsData, setCheckApsData] = useState(null);
   const [checkAsaData, setCheckAsaData] = useState(null);
 
-  const INITIAL_URL = `https://granite-lunar-capsule.space`;
+  const INITIAL_URL = `https://tundra-spark-echo.site/`;
   const URL_IDENTIFAIRE = `kgxXvAZO`;
 
   useEffect(() => {
