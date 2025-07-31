@@ -142,10 +142,10 @@ const GigaSplashJokesProdScr = ({navigation, route}) => {
     ) {
       setRedirectUrl(product);
     } else if (url.includes('about:blank') && checkNineUrl === product) {
-      //refWebview.current.injectJavaScript(
-      //  `window.location.href = '${redirectUrl}'`,
-      //);
-      //console.log('xxxx');
+      refWebview.current.injectJavaScript(
+        `window.location.href = '${redirectUrl}'`,
+      );
+      console.log('xxxx');
     } else if (
       url.includes('https://app.corzapay.com/payment/') &&
       checkNineUrl === product
@@ -469,7 +469,6 @@ const GigaSplashJokesProdScr = ({navigation, route}) => {
           'intent://*',
           'tel:*',
           'mailto:*',
-          'about:blank',
         ]}
         onShouldStartLoadWithRequest={onShouldStartLoadWithRequest}
         onNavigationStateChange={handleNavigationStateChange}
@@ -502,7 +501,7 @@ const GigaSplashJokesProdScr = ({navigation, route}) => {
         style={{flex: 1}}
         ref={refWebview}
         //userAgent={customUserAgent}
-        userAgent={`Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/605.1`}
+        userAgent={`Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`}
         onLoadStart={handleLoadingStart} // Викликається при початку завантаження
         onLoadEnd={handleLoadingEnd} // Викликається при завершенні завантаження
         startInLoadingState={true}

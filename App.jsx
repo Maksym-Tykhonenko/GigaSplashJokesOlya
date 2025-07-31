@@ -422,14 +422,14 @@ const App = () => {
             onInstallConversionDataListener: true,
             onDeepLinkListener: true,
             timeToWaitForATTUserAuthorization: 10,
-            manualStart: true, // Тепер ініціалізація без автоматичного старту
+            manualStart: true,
           },
           result => {
-            console.log('📦 AppsFlyer initSdk callback result:', result);
+            console.log('AppsFlyer initSdk callback result:', result);
             resolve(result);
           },
           error => {
-            console.log('❌ AppsFlyer initSdk error:', error);
+            console.log('AppsFlyer initSdk error:', error);
             reject(error);
           },
         );
@@ -665,19 +665,19 @@ const App = () => {
 
   ///////// Route
   const Route = ({ isFatch }) => {
-    //if (!aceptTransperency || !completeLink) {
-    //  // Показуємо тільки лоудери, поки acceptTransparency не true
-    //  return null;
-    //}
+    if (!aceptTransperency || !completeLink) {
+      // Показуємо тільки лоудери, поки acceptTransparency не true
+      return null;
+    }
 
     if (isFatch) {
       return (
         <Stack.Navigator>
           <Stack.Screen
             initialParams={{
-              //responseToPushPermition,
-              //product: finalLink,
-              //timeStampUserId: timeStampUserId,
+              responseToPushPermition,
+              product: finalLink,
+              timeStampUserId: timeStampUserId,
             }}
             name="GigaSplashJokesProdScr"
             component={GigaSplashJokesProdScr}

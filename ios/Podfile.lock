@@ -1,7 +1,7 @@
 PODS:
-  - AppsFlyerFramework (6.17.1):
-    - AppsFlyerFramework/Main (= 6.17.1)
-  - AppsFlyerFramework/Main (6.17.1)
+  - AppsFlyerFramework (6.16.2):
+    - AppsFlyerFramework/Main (= 6.16.2)
+  - AppsFlyerFramework/Main (6.16.2)
   - boost (1.84.0)
   - BVLinearGradient (2.8.3):
     - React-Core
@@ -1291,8 +1291,8 @@ PODS:
     - ReactCommon/turbomodule/core
   - react-native-apple-ads-attribution (1.0.4):
     - React-Core
-  - react-native-appsflyer (6.17.1):
-    - AppsFlyerFramework (= 6.17.1)
+  - react-native-appsflyer (6.16.2):
+    - AppsFlyerFramework (= 6.16.2)
     - React
   - react-native-onesignal (5.2.13):
     - OneSignalXCFramework (= 5.2.14)
@@ -2034,7 +2034,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  AppsFlyerFramework: 11ef2dea3fa755f9ed8ba53267012ee1c62d7dc0
+  AppsFlyerFramework: fe5303bffcdfd941d5f570c2d21eaaea982e7bdc
   boost: 7e761d76ca2ce687f7cc98e698152abd03a18f90
   BVLinearGradient: 880f91a7854faff2df62518f0281afb1c60d49a3
   DoubleConversion: cb417026b2400c8f53ae97020b2be961b59470cb
@@ -2075,7 +2075,7 @@ SPEC CHECKSUMS:
   React-Mapbuffer: b6619632c9800e300a9dcfb5139009416cec6392
   React-microtasksnativemodule: e99c1d7791f5e8d5be370b78e02433e64d2391d8
   react-native-apple-ads-attribution: 08dcd153b8b903bbb6da927115f9e8d17fd211c9
-  react-native-appsflyer: 5301dd3b82c7a3e9cf5d783e25661efc778f4dc2
+  react-native-appsflyer: d52a08a5e687e4c2aca78519b0e258e1a82fad0a
   react-native-onesignal: 0829ce2a504db26dd80eaf14d4e0211ea626fe62
   react-native-safe-area-context: 63e27bb3aeb2c0ef652f8913d731573932080ff9
   react-native-webview: be9957759cb73cb64f2ed5359e32a85f1f5bdff8
